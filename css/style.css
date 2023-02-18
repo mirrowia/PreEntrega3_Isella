@@ -109,6 +109,14 @@ main {
   .album-container .description {
     margin: 1.5rem 0; }
 
+@media screen and (max-width: 768px) {
+  .cover {
+    margin-bottom: 1em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .carousel {
+    margin-bottom: 3em; } }
+
 .container-videos {
   justify-content: space-evenly !important; }
   .container-videos .container-video {
@@ -121,6 +129,10 @@ main {
   height: auto;
   margin: 0.5rem 0; }
 
+@media screen and (min-width: 820px) and (max-width: 1200px) {
+  .container-galery div {
+    width: 50%; } }
+
 .img-container img {
   max-width: 100%;
   height: auto;
@@ -128,7 +140,13 @@ main {
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important; }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .full-form-container {
+    margin-top: 5em;
+    margin-bottom: 5em; } }
+
 footer {
+  bottom: 0;
   margin: 0 auto;
   width: 100%; }
   footer div {
@@ -157,8 +175,12 @@ footer {
   color: #f8f9fa;
   background-color: #212529; }
 
+html {
+  min-height: 100vh; }
+
 body {
-  min-height: 100vh;
+  position: relative;
+  min-height: 100%;
   overflow-x: hidden; }
 
 .darkMode div {
